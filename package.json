@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@govtechsg/decentralized-renderer-react-components": "^3.8.0",
+    "@govtechsg/decentralized-renderer-react-components": "^3.12.1",
     "@govtechsg/open-attestation": "^6.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

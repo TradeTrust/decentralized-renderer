@@ -1,6 +1,6 @@
 import { v2 } from "@tradetrust-tt/tradetrust";
 import { CoveringLetterSchemaV2 } from "./types";
-import logo from "/static/images/logo-dbs.png?inline";
+import logo from "/static/images/logo-tradetrust.png";
 
 export const CoveringLetterSampleV2b: CoveringLetterSchemaV2 = {
   $template: {

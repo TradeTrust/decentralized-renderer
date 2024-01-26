@@ -718,10 +718,6 @@ pre {
   line-height: 1rem;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .collapse {
   visibility: collapse;
 }

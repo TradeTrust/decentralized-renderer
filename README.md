@@ -41,9 +41,7 @@ npm run start
 Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8080/` to see your actual document rendered in a dummy application.
 
 #### Core Components
-Core components are reusable React components that provide additional functionalities for renderer templates.
 
-### Example Templates
 Core components, located in the `src/core directory``, are reusable React components that offer enhanced functionalities for renderer templates.
 
 This repository contains a collection of example templates along with demonstrations of how to use core components. You can find these examples in the `/src/templates` directory. These templates serve as references and guides to help you set up your own templates to meet your unique requirements.

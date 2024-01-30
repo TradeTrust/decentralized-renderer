@@ -40,7 +40,7 @@ npm run start
 
 Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8080/` to see your actual document rendered in a dummy application.
 
-#### Core Components
+### Core Components
 
 Core components, located in the `src/core directory``, are reusable React components that offer enhanced functionalities for renderer templates.
 

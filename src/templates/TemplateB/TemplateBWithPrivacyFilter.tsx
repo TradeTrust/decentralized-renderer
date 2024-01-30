@@ -7,7 +7,6 @@ import { Wrapper } from "../../core/Wrapper";
 import { IconRedact, PrivacyFilter } from "../../core/PrivacyFilter";
 import { getDocumentData } from "../../utils";
 import { TemplateB, TemplateBSchema } from "./types";
-import { PrintWatermark } from "../../core/PrintWatermark";
 
 const CustomStyles = styled.div`
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -63,8 +62,6 @@ export const TemplateBWithPrivacyFilter: FunctionComponent<TemplateProps<Templat
   const qrCodeUrl = documentData?.links?.self.href;
   return (
     <>
-      <PrintWatermark/>
-    123
     <Wrapper data-testid="invoice-template">
       
       <PrivacyFilter editable={editable} onToggleEditable={() => setEditable(!editable)} />

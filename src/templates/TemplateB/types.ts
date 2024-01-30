@@ -1,16 +1,16 @@
 import { v2, v3 } from "@tradetrust-tt/tradetrust";
 
-export type InvoiceDocumentSchemaV2 = v2.OpenAttestationDocument & InvoiceDocument;
+export type TemplateBSchemaV2 = v2.OpenAttestationDocument & TemplateB;
 
-export type InvoiceDocumentSchemaV3 = v3.OpenAttestationDocument & {
-  credentialSubject: InvoiceDocument;
+export type TemplateBSchemaV3 = v3.OpenAttestationDocument & {
+  credentialSubject: TemplateB;
 };
 
 
 
-export type InvoiceDocumentSchema = InvoiceDocumentSchemaV2 | InvoiceDocumentSchemaV3;
+export type TemplateBSchema = TemplateBSchemaV2 | TemplateBSchemaV3;
 
-export interface InvoiceDocument {
+export interface TemplateB {
   id?: string;
   date?: string;
   customerId?: string;

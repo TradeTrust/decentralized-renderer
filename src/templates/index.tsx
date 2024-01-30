@@ -1,10 +1,8 @@
 import { TemplateRegistry } from "@tradetrust-tt/decentralized-renderer-react-components";
-import { BillOfLadingTemplates } from "./BillOfLading";
-import { InvoiceTemplates } from "./Invoice";
-import { XMLRendererTemplate } from "./XmlRenderer";
+import { TemplateATemplates } from "./TemplateA";
+import { TemplateBTemplates } from "./TemplateB";
 
 export const registry: TemplateRegistry<any> = {
-  BILL_OF_LADING: BillOfLadingTemplates,
-  INVOICE: InvoiceTemplates,
-  XML_RENDERER: XMLRendererTemplate,
-};
+  TEMPLATE_A: TemplateATemplates,
+  TEMPLATE_B: TemplateBTemplates,
+  };

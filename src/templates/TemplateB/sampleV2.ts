@@ -1,7 +1,7 @@
 import { v2 } from "@tradetrust-tt/tradetrust";
-import { InvoiceDocumentSchemaV2 } from "./types";
+import { TemplateBSchemaV2 } from "./types";
 
-export const InvoiceSampleV2: InvoiceDocumentSchemaV2 = {
+export const TemplateBSampleV2: TemplateBSchemaV2 = {
   $template: {
     type: v2.TemplateType.EmbeddedRenderer,
     name: "INVOICE",
@@ -10,7 +10,7 @@ export const InvoiceSampleV2: InvoiceDocumentSchemaV2 = {
   issuers: [
     {
       name: "abc",
-      documentStore: "0x1245e5B64D785b25057f7438F715f4aA5D965733",
+      documentStore: "0xdae63761283e048fe4989bc0231007b592ccc62f8f7105c934ea6e58225fa33e",
       identityProof: {
         type: v2.IdentityProofType.DNSTxt,
         location: "example.tradetrust.io",

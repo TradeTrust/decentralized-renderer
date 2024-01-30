@@ -40,22 +40,34 @@ npm run start
 
 Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8080/` to see your actual document rendered in a dummy application.
 
+#### Core Components
+Core components are reusable React components that provide additional functionalities for renderer templates.
+
 ### Example Templates
+Core components, located in the `src/core directory``, are reusable React components that offer enhanced functionalities for renderer templates.
 
-This repository contains a collection of example templates located in the `/src/templates` directory. These templates serve as references and guides for setting up your own templates to suit your specific needs.
+This repository contains a collection of example templates along with demonstrations of how to use core components. You can find these examples in the `/src/templates` directory. These templates serve as references and guides to help you set up your own templates to meet your unique requirements.
 
-All of these templates are built using core components located under the `/src/core`. Additionally, they all utilize a QR code component to generate QR codes for easy sharing and access to relevant information.
+#### DocumentQrCode
+It allows users to share documents across devices using a QR code.
 
-1. Bill of Lading
-The "Bill of Lading" template provides a basic example.
+For detailed information on how to use the QR Code Component, please refer to the official documentation [here](https://docs.tradetrust.io/docs/reference/tradetrust-website/qr-code/).
 
-2. Invoice Template
-The "Invoice Template" showcases the use of a privacy filter to automatically redact sensitive information, ensuring data security and privacy.
+#### Wrapper/ Error Boundary
+The Wrapper/Error Boundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
 
-3. XML Renderer
-The "XML Renderer" template demonstrates how to use XML data to dynamically render content within your template.
+#### PrivacyFilter
 
-Feel free to explore these examples and adapt them to your own projects.
+The Privacy Filter Component is a powerful tool for safeguarding sensitive information within a document. To use the Privacy Filter in the decentralized renderer, follow these steps
+
+- Click the "Edit Document" button within the PrivacyFilter component.
+- Click "Remove" on the redactable values to specify the information you want to remove.
+- Click "Done" on the Privacy Filter Component to complete the process.
+- Download the document with hidden values
+
+#### PrintWatermark
+
+The PrintWatermark Component allows users to include the TradeTrust watermark text in the background of a document's print preview.
 
 ### Creating new templates
 

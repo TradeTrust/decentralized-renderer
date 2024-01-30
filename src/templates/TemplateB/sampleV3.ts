@@ -1,7 +1,7 @@
 import { v3 } from "@tradetrust-tt/tradetrust";
-import { InvoiceDocumentSchemaV3 } from "./types";
+import { TemplateBSchemaV3 } from "./types";
 
-export const InvoiceSampleV3: InvoiceDocumentSchemaV3 = {
+export const TemplateBSampleV3: TemplateBSchemaV3 = {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://schemata.openattestation.com/com/openattestation/1.0/OpenAttestation.v3.json",

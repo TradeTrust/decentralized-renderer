@@ -6,7 +6,8 @@ import { DocumentQrCode } from "../../core/DocumentQrCode";
 import { Wrapper } from "../../core/Wrapper";
 import { IconRedact, PrivacyFilter } from "../../core/PrivacyFilter";
 import { getDocumentData } from "../../utils";
-import { InvoiceDocument, InvoiceDocumentSchema } from "./types";
+import { TemplateB, TemplateBSchema } from "./types";
+import { PrintWatermark } from "../../core/PrintWatermark";
 
 const CustomStyles = styled.div`
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -40,12 +41,12 @@ const CustomStyles = styled.div`
   }
 `;
 
-export const InvoiceTemplate: FunctionComponent<TemplateProps<InvoiceDocumentSchema>> = ({
+export const TemplateBWithPrivacyFilter: FunctionComponent<TemplateProps<TemplateBSchema>> = ({
   document,
   handleObfuscation,
 }) => {
   const [editable, setEditable] = useState(false);
-  const documentData = getDocumentData(document) as InvoiceDocument;
+  const documentData = getDocumentData(document) as TemplateB;
   const {
     id,
     date,
@@ -61,7 +62,11 @@ export const InvoiceTemplate: FunctionComponent<TemplateProps<InvoiceDocumentSch
   } = documentData;
   const qrCodeUrl = documentData?.links?.self.href;
   return (
+    <>
+      <PrintWatermark/>
+    123
     <Wrapper data-testid="invoice-template">
+      
       <PrivacyFilter editable={editable} onToggleEditable={() => setEditable(!editable)} />
       <CustomStyles>
         <div className="flex flex-wrap">
@@ -238,5 +243,6 @@ export const InvoiceTemplate: FunctionComponent<TemplateProps<InvoiceDocumentSch
         {qrCodeUrl && <DocumentQrCode url={qrCodeUrl} />}
       </CustomStyles>
     </Wrapper>
+    </>
   );
 };

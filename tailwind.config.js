@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const commonUiConfig = require("@govtechsg/tradetrust-ui-components/build/tailwind");
+const commonUiConfig = require("@tradetrust-tt/tradetrust-ui-components/build/tailwind");
 
 const config = {
   ...commonUiConfig,

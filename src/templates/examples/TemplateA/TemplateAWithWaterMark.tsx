@@ -1,8 +1,8 @@
 import { TemplateProps } from "@tradetrust-tt/decentralized-renderer-react-components";
 import React, { FunctionComponent } from "react";
-import { getDocumentData } from "../../utils";
+import { getDocumentData } from "../../../utils";
 import { TemplateADocument, TemplateASchema } from "./types";
-import { PrintWatermark } from "../../core/PrintWatermark";
+import { PrintWatermark } from "../../../core/PrintWatermark";
 
 const Content = (document: TemplateADocument): JSX.Element => {
   return (

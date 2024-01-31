@@ -2,10 +2,10 @@ import styled from "@emotion/styled";
 import { RedactableValue, TemplateProps } from "@tradetrust-tt/decentralized-renderer-react-components";
 import { format } from "date-fns";
 import React, { FunctionComponent, useState } from "react";
-import { DocumentQrCode } from "../../core/DocumentQrCode";
-import { Wrapper } from "../../core/Wrapper";
-import { IconRedact, PrivacyFilter } from "../../core/PrivacyFilter";
-import { getDocumentData } from "../../utils";
+import { DocumentQrCode } from "../../../core/DocumentQrCode";
+import { Wrapper } from "../../../core/Wrapper";
+import { IconRedact, PrivacyFilter } from "../../../core/PrivacyFilter";
+import { getDocumentData } from "../../../utils";
 import { TemplateB, TemplateBSchema } from "./types";
 
 const CustomStyles = styled.div`

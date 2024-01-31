@@ -1,6 +1,6 @@
 import { TemplateRegistry } from "@tradetrust-tt/decentralized-renderer-react-components";
-import { TemplateATemplates } from "./TemplateA";
-import { TemplateBTemplates } from "./TemplateB";
+import { TemplateATemplates } from "./examples/TemplateA";
+import { TemplateBTemplates } from "./examples/TemplateB";
 
 export const registry: TemplateRegistry<any> = {
   TEMPLATE_A: TemplateATemplates,

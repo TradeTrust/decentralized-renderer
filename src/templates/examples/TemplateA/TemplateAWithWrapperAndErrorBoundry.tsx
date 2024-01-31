@@ -1,7 +1,8 @@
 import { TemplateProps } from "@tradetrust-tt/decentralized-renderer-react-components";
 import React, { FunctionComponent } from "react";
-import { DocumentQrCode } from "../../core/DocumentQrCode";
-import { getDocumentData } from "../../utils";
+import { DocumentQrCode } from "../../../core/DocumentQrCode";
+import { Wrapper } from "../../../core/Wrapper";
+import { getDocumentData } from "../../../utils";
 import { TemplateADocument, TemplateASchema } from "./types";
 
 const Content = (document: TemplateADocument): JSX.Element => {
@@ -27,13 +28,13 @@ const Content = (document: TemplateADocument): JSX.Element => {
 };
 
 
-export const TemplateAWithQRCode: FunctionComponent<TemplateProps<TemplateASchema>> = ({ document }) => {
+export const TemplateAWithWrapperAndErrorBoundry: FunctionComponent<TemplateProps<TemplateASchema>> = ({ document }) => {
   const documentData = getDocumentData(document) as TemplateADocument;
-  const qrCodeUrl = documentData?.links?.self.href;
   return (
     <>
+    <Wrapper data-testid="bill-of-lading-template">
       <div className="mb-8">{Content(documentData)}</div>
-      {qrCodeUrl && <DocumentQrCode url={qrCodeUrl} />}
+    </Wrapper>
     </>
   );
 };

@@ -13,6 +13,6 @@ jobs:
       - name: Clean Install
         run: npm ci
       - name: Build Storybook
-        run: npm run build-storybook
+        run: npm run storybook:build
       - name: Build App
         run: npm run build

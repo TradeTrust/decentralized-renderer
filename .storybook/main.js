@@ -4,6 +4,10 @@ const toPath = (_path) => path.join(process.cwd(), _path);
 module.exports = {
   stories: ["../src/**/*.stories.@(tsx)"],
   addons: ["@storybook/addon-essentials"],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
   webpackFinal: (config) => {
     return {
       ...config,

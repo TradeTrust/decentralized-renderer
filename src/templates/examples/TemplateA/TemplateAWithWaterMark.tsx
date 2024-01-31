@@ -32,29 +32,6 @@ export const TemplateAWithWaterMark: FunctionComponent<TemplateProps<TemplateASc
     <>
         <PrintWatermark/>
         <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        <div className="mb-8">{Content(documentData)}</div>
-        
     </>
   );
 };

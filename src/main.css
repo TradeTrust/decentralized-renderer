@@ -734,6 +734,10 @@ pre {
   display: table;
 }
 
+.contents {
+  display: contents;
+}
+
 .w-1\/2 {
   width: 50%;
 }

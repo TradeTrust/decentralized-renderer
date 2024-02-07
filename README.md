@@ -29,7 +29,7 @@ To stay as simple and less opinionated as possible, these are omitted:
 ### Prerequisite
 
 - Node (optionally, use [nvm](https://github.com/nvm-sh/nvm) to manage node version)
-  - Node version 14 onwards.
+- Node version 18 onwards.
 
 ### Development
 
@@ -47,11 +47,13 @@ Core components, located in the `src/core directory`, are reusable React compone
 This repository contains a collection of example templates along with demonstrations of how to use core components. You can find these examples in the `/src/templates` directory. These templates serve as references and guides to help you set up your own templates to meet your unique requirements.
 
 #### DocumentQrCode
+
 It allows users to share documents across devices using a QR code.
 
 For detailed information on how to use the QR Code Component, please refer to the official documentation [here](https://docs.tradetrust.io/docs/reference/tradetrust-website/qr-code/).
 
 #### Wrapper/ Error Boundary
+
 The Wrapper/Error Boundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
 
 #### PrivacyFilter

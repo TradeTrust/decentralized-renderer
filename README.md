@@ -42,7 +42,7 @@ Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8
 
 ### Core Components
 
-Core components, located in the `src/core directory`, are reusable React components that offer enhanced functionalities for renderer templates.
+Core components, located in the `src/core directory`, are reusable React components that offer enhanced functionalities for renderer templates. When you run `npm run storybook`, the example templates with core components will be displayed.
 
 This repository contains a collection of example templates along with demonstrations of how to use core components. You can find these examples in the `/src/templates` directory. These templates serve as references and guides to help you set up your own templates to meet your unique requirements.
 
@@ -52,9 +52,9 @@ It allows users to share documents across devices using a QR code.
 
 For detailed information on how to use the QR Code Component, please refer to the official documentation [here](https://docs.tradetrust.io/docs/reference/tradetrust-website/qr-code/).
 
-#### Wrapper/ Error Boundary
+#### Wrapper/ ErrorBoundary
 
-The Wrapper/Error Boundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
+The Wrapper/ErrorBoundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
 
 #### PrivacyFilter
 

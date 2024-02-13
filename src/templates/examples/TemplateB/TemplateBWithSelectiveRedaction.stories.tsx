@@ -1,18 +1,18 @@
 import React, { FunctionComponent } from "react";
-import { TemplateBWithRedactableValues } from "./TemplateBWithRedactableValues";
+import { TemplateBWithSelectiveRedaction } from "./TemplateBWithSelectiveRedaction";
 import { TemplateBSampleV2 } from "./sampleV2";
 
 export default {
   title: "TemplateB",
-  component: TemplateBWithRedactableValues,
+  component: TemplateBWithSelectiveRedaction,
   parameters: {
     componentSubtitle: "Sample Template B",
   },
 };
 
-export const TemplateWithRedactableValues: FunctionComponent = () => {
+export const TemplateWithSelectiveRedaction: FunctionComponent = () => {
   return (
-    <TemplateBWithRedactableValues
+    <TemplateBWithSelectiveRedaction
       document={TemplateBSampleV2}
       handleObfuscation={() => {}}
     />

@@ -54,6 +54,7 @@ Make sure to edit the following files according to your module's info:
 ### Development
 
 ```sh
+npm i
 npm run storybook
 ```
 

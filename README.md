@@ -1,6 +1,6 @@
 # TradeTrust Decentralized Renderer (React Template)
 
-This template serves as a quick way to start building your own decentralized renderer using OpenAttestation stack.
+This template serves as a quick way to start building your own decentralized renderer using TradeTrust stack. You can follow our tutorial over at (https://docs.tradetrust.io/docs/tutorial/decentralised-renderer/).
 
 ## How and what?
 
@@ -35,7 +35,7 @@ To stay as simple and less opinionated as possible, these are omitted:
 
 ```sh
 npm i
-npm run start
+npm run storybook
 ```
 
 Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8080/` to see your actual document rendered in a dummy application.
@@ -56,13 +56,13 @@ For detailed information on how to use the QR Code Component, please refer to th
 
 The Wrapper/ErrorBoundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
 
-#### PrivacyFilter
+#### RedactableValues
 
-The Privacy Filter Component is a powerful tool for safeguarding sensitive information within a document. To use the Privacy Filter in the decentralized renderer, follow these steps
+The RedactableValues Component is a powerful tool for safeguarding sensitive information within a document. To use the RedactableValues in the decentralized renderer, follow these steps
 
-- Click the "Edit Document" button within the PrivacyFilter component.
+- Click the "Edit Document" button within the RedactableValues component.
 - Click "Remove" on the redactable values to specify the information you want to remove.
-- Click "Done" on the Privacy Filter Component to complete the process.
+- Click "Done" on the Component to complete the process.
 - Download the document with hidden values
 
 #### PrintWatermark

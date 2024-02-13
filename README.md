@@ -31,14 +31,33 @@ To stay as simple and less opinionated as possible, these are omitted:
 - Node (optionally, use [nvm](https://github.com/nvm-sh/nvm) to manage node version)
 - Node version 18 onwards.
 
+## Install
+
+The easiest way to use **tradetrust-decentralized-renderer-template** is through github by clicking on `Use this template` button in the repository page.
+
+You can also download or `git clone` this repo
+
+```sh
+git clone https://github.com/TradeTrust/tradetrust-decentralized-renderer.git
+cd tradetrust-decentralized-renderer
+rm -rf .git
+npm install
+```
+
+Make sure to edit the following files according to your module's info:
+
+- package.json (module name and version)
+- README.md
+- LICENSE
+- add your own template (in `src/templates` folder) and configure correctly the template registry (in `src/templates/index.tsx` file)
+
 ### Development
 
 ```sh
-npm i
 npm run storybook
 ```
 
-Head off to `http://localhost:6006/` to see storybook, while `http://127.0.0.1:8080/` to see your actual document rendered in a dummy application.
+Head off to `http://localhost:6006/` to see storybook.
 
 ### Core Components
 
@@ -56,11 +75,11 @@ For detailed information on how to use the QR Code Component, please refer to th
 
 The Wrapper/ErrorBoundary Component is designed to handle scenarios where a template cannot be rendered correctly. In such cases, this component acts as a fallback, displaying a user-friendly error message and stack.
 
-#### RedactableValues
+#### SelectiveRedaction
 
-The RedactableValues Component is a powerful tool for safeguarding sensitive information within a document. To use the RedactableValues in the decentralized renderer, follow these steps
+The SelectiveRedaction Component is a powerful tool for safeguarding sensitive information within a document. To use the SelectiveRedaction in the decentralized renderer, follow these steps
 
-- Click the "Edit Document" button within the RedactableValues component.
+- Click the "Edit Document" button within the SelectiveRedaction component.
 - Click "Remove" on the redactable values to specify the information you want to remove.
 - Click "Done" on the Component to complete the process.
 - Download the document with hidden values

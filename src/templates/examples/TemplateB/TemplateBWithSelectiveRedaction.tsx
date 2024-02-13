@@ -7,7 +7,10 @@ import { format } from "date-fns";
 import React, { FunctionComponent, useState } from "react";
 import { DocumentQrCode } from "../../../core/DocumentQrCode";
 import { Wrapper } from "../../../core/Wrapper";
-import { IconRedact, RedactableValues } from "../../../core/RedactableValues";
+import {
+  IconRedact,
+  SelectiveRedaction,
+} from "../../../core/SelectiveRedaction";
 import { getDocumentData } from "../../../utils";
 import { TemplateB, TemplateBSchema } from "./types";
 
@@ -43,7 +46,7 @@ const CustomStyles = styled.div`
   }
 `;
 
-export const TemplateBWithRedactableValues: FunctionComponent<
+export const TemplateBWithSelectiveRedaction: FunctionComponent<
   TemplateProps<TemplateBSchema>
 > = ({ document, handleObfuscation }) => {
   const [editable, setEditable] = useState(false);
@@ -65,7 +68,7 @@ export const TemplateBWithRedactableValues: FunctionComponent<
   return (
     <>
       <Wrapper data-testid="invoice-template">
-        <RedactableValues
+        <SelectiveRedaction
           editable={editable}
           onToggleEditable={() => setEditable(!editable)}
         />

@@ -2,7 +2,7 @@ import { Button } from "@tradetrust-tt/tradetrust-ui-components";
 import React, { FunctionComponent } from "react";
 import patternWaves from "/static/images/pattern-waves.png";
 
-interface RedactableValueProps {
+interface SelectiveRedaction {
   editable: boolean;
   onToggleEditable: () => void;
   options?: {
@@ -12,7 +12,7 @@ interface RedactableValueProps {
   };
 }
 
-export const RedactableValues: FunctionComponent<RedactableValueProps> = ({
+export const SelectiveRedaction: FunctionComponent<SelectiveRedaction> = ({
   editable,
   onToggleEditable,
   options,

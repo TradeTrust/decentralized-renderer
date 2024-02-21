@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import QRCode from "qrcode.react";
 import React, { FunctionComponent } from "react";
 import qrcodeImg from "/static/images/logo-qrcode.png";
-import ImageSettings from "qrcode.react";
 const Print = styled.div`
   display: none;
 

@@ -23,9 +23,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@tradetrust-tt/decentralized-renderer-react-components": "^3.14.0",
-    "@tradetrust-tt/tradetrust": "^6.9.0",
-    "@tradetrust-tt/tradetrust-ui-components": "2.22.2",
+    "@tradetrust-tt/decentralized-renderer-react-components": "^3.14.3",
+    "@tradetrust-tt/tradetrust": "^6.10.0",
+    "@tradetrust-tt/tradetrust-ui-components": "3.2.0",
     "date-fns": "^3.3.1",
     "debug": "^4.3.4",
     "escape-goat": "4.0.0",
@@ -78,7 +78,7 @@
     "webpack": "^5.90.2",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.2.0"
   },
   "engines": {
     "node": "18.x"

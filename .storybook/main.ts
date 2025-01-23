@@ -1,5 +1,6 @@
-import type { StorybookConfig } from "@storybook/react-webpack5"
+import type { StorybookConfig } from "@storybook/react-webpack5";
 import * as path from "path";
+const webpack = require("webpack");
 const toPath = (_path: any) => path.join(process.cwd(), _path);;
 
 const config: StorybookConfig = {
@@ -27,7 +28,25 @@ const config: StorybookConfig = {
           "@emotion/styled": toPath("node_modules/@emotion/styled"),
           "emotion-theming": toPath("node_modules/@emotion/react"),
         },
+        fallback: {
+          vm: require.resolve("vm-browserify"),
+          stream: require.resolve("stream-browserify"),
+          os: require.resolve("os-browserify/browser"),
+          crypto: require.resolve("crypto-browserify"),
+          path: require.resolve("path-browserify"),
+          buffer: require.resolve("buffer"),
+          "process/browser": require.resolve("process/browser"),
+          util: require.resolve("util/"),
+          events: require.resolve("events/"),
+        },
       },
+      plugins: [
+        ...config.plugins,
+        new webpack.ProvidePlugin({
+          process: 'process/browser',
+          Buffer: ['buffer', 'Buffer'],
+        })
+      ]
     };
   },
   docs: {

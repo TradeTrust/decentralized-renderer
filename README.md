@@ -20,7 +20,7 @@ To stay as simple and less opinionated as possible, these are omitted:
 ## Main dependancies
 
 - `@govtechsg/decentralized-renderer-react-components`
-- `@tradetrust-tt/tradetrust`
+- `@trustvc/trustvc`
 - `react`
 - `react-dom`
 

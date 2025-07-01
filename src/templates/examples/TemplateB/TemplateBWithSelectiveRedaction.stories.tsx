@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { TemplateBWithSelectiveRedaction } from "./TemplateBWithSelectiveRedaction";
 import { TemplateBSampleV2 } from "./sampleV2";
+import { TemplateBSampleW3C } from "./sampleW3C";
 import { TemplateBSchema } from "./types";
 
 export default {
@@ -16,6 +17,15 @@ export const TemplateWithSelectiveRedaction: FunctionComponent = () => {
   return (
     <TemplateBWithSelectiveRedaction
       document={TemplateBSampleV2}
+      handleObfuscation={() => { }}
+    />
+  );
+};
+
+export const TemplateWithSelectiveRedactionWithW3C: FunctionComponent = () => {
+  return (
+    <TemplateBWithSelectiveRedaction
+      document={TemplateBSampleW3C}
       handleObfuscation={() => { }}
     />
   );

@@ -16,7 +16,7 @@ export const TemplateBSampleV3: TemplateBSchemaV3 = {
   openAttestationMetadata: {
     template: {
       type: v3.TemplateType.EmbeddedRenderer,
-      name: "INVOICE",
+      name: "TEMPLATE_B",
       url: "http://localhost:3000",
     },
     proof: {
